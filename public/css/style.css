@@ -75,7 +75,7 @@ main{
 #wedding-text{
   display: flex;
   flex: 0 1 40vw;
-  height: 50vh;
+  height: 65vh;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -92,6 +92,18 @@ main{
   flex: 0 1 60vw;
   margin: 0;
 }
+
+#wedding-form{
+  margin-top: 1.5rem;
+}
+
+#wedding-name, #wedding-email{
+  margin-bottom: 1rem;
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+}
+
 
 
 
@@ -133,6 +145,11 @@ main{
 
 .btn:hover{
   background: #f4f4f4;
+}
+
+#wedding-submit{
+  padding: 0.5 1rem;
+  margin: 0;
 }
 
 #header{
