@@ -14,3 +14,7 @@ $('#wedding-form').hide();
 $('#wedding-Details').on('click', function(){
   $('#wedding-form').toggle();
 })
+
+$('#wedding-submit').on('click', function(){
+  $('#wedding-form').hide();
+})
