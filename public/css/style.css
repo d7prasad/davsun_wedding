@@ -75,7 +75,7 @@ main{
 #wedding-text{
   display: flex;
   flex: 0 1 40vw;
-  height: 50vh;
+  height: 70vh;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -93,11 +93,32 @@ main{
   margin: 0;
 }
 
+#wedding-input{
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+#wedding-name{
+  padding: 1rem;
+}
+
+#wedding-input label{
+  margin-right: 5px;
+}
+
+#wedding-vote-submit{
+  margin-right: 5px;
+}
+
+#wedding-vote-option{
+  margin-top: 20px;
+}
 
 
 #reception{
   background: #fff;
 }
+
 
 #reception-text{
   display: flex;
@@ -230,5 +251,8 @@ footer h3{
 @media(min-width: 700px) {
   .btn {
     padding: 1rem 3rem;
+  }
+  #wedding-vote-button .btn{
+    padding: 0.5rem 2rem;
   }
 }
