@@ -75,7 +75,7 @@ main{
 #wedding-text{
   display: flex;
   flex: 0 1 40vw;
-  height: 70vh;
+  height: 65vh;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -112,6 +112,30 @@ main{
 
 #wedding-vote-option{
   margin-top: 20px;
+}
+
+#success-wed-message{
+  padding: 0.5rem 2rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  text-decoration: none;
+  color: #333;
+  background-color: lightgreen;
+  width: 70%;
+  border-radius: 10px;
+}
+
+#warning-wed-message, #warning-wed-node{
+  padding: 0.5rem 2rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  text-decoration: none;
+  color: #333;
+  background-color: coral;
+  width: 70%;
+  border-radius: 10px;
 }
 
 

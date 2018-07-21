@@ -27,23 +27,23 @@
             <a href="#images" class="btn" id="wedding-Details">
               Vote Here
             </a>
-            <form action="">              
+            <form action="/wedding" method="post" id="wedding-form">              
               <div id="wedding-input">
                 <div id="wedding-name">
                   <label for="wedding-name-text">Enter Your Name: </label>
-                  <input type="text" id="wedding-name-text" placeholder="Name">
+                  <input type="text" id="wedding-name-text" name="name" placeholder="Name">
                 </div>
                 <div id="wedding-mail">
                   <label for="wedding-name-mail">Enter Your email: </label>
-                  <input type="text" id="wedding-name-mail" placeholder="abc@xyz">
+                  <input type="text" id="wedding-name-mail" name="email" placeholder="abc@xyz">
                 </div>
                 <div id="wedding-vote-option">
                   <label for="wedding-radio-yes">Yes </label>
-                  <input type="radio" name="wedding-vote" id="wedding-radio-yes" value="yes">
+                  <input type="radio" name="wedding_vote" id="wedding-radio-yes" value="yes">
                   <label for="wedding-radio-no">No </label>
-                  <input type="radio" name="wedding-vote" id="wedding-radion-no" value="no">
+                  <input type="radio" name="wedding_vote" id="wedding-radion-no" value="no">
                   <label for="wedding-radio-maybe">May-be </label>
-                  <input type="radio" name="wedding-vote" id="wedding-radio-maybe" value="maybe">
+                  <input type="radio" name="wedding_vote" id="wedding-radio-maybe" value="maybe">
                 </div>
                 <div id="wedding-vote-button">
                   <a href="#images" class="btn" id="wedding-vote-submit">
@@ -53,6 +53,14 @@
                 </div>
               </div>
             </form>
+            {{#if msg}}
+              <div id="success-wed-message"><p>Your entry saved successfully!</p></div>
+            {{/if}}
+            {{#if warning}}
+            <div id="warning-wed-node"><p>{{warning}}</p></div>
+            {{else}}
+            <div id="warning-wed-message"><p>Your input has some errors!</p></div>
+            {{/if}}
           </div>
         </div>
       </div>
