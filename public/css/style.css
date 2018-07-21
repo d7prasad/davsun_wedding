@@ -156,6 +156,11 @@ main{
   background: #f4f4f4;
 }
 
+#wedding-submit{
+  padding: 0.5 1rem;
+  margin: 0;
+}
+
 #header{
   padding: 1.5rem;
   text-align: center;
