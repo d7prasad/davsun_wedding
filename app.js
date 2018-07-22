@@ -14,11 +14,14 @@ const Wedding = mongoose.model('wedding');
 require('./models/Reception');
 const Reception = mongoose.model('reception');
 
+// DB Config
+const db = require('./config/database')
+
 // Map global promise - get rid of warning in mongodb for promises
 mongoose.Promise = global.Promise;
 
 // Connect to mongoose(It can be local or remote)
-mongoose.connect('mongodb://localhost/davsun-dev')
+mongoose.connect(db.mongoURI)
 .then(()=>{
   console.log('MongoDB Conencted..')
 })
@@ -65,7 +68,9 @@ app.post('/wedding', (req, res)=>{
                 console.log("already registerd");
                 console.log(wedding);
                 res.render('index',{
-                    warning: "You're already registered for wedding!"
+                    warning: "You're already registered for wedding!",
+                    name: req.body.name,
+                    email: req.body.email
                 })
             }else{
                 console.log("first time login");
@@ -87,13 +92,12 @@ app.post('/wedding', (req, res)=>{
 
 // Reception Flow
 app.post('/reception', (req, res)=>{
-    console.log("Reception flow started>> ")
     let reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
     if(req.body.email == '' || reg.test(req.body.email) == false ){
         res.render('index',{
             warning_reception: "Kindly enter proper email format!",
-            name: req.body.name,
-            email: req.body.email
+            name_reception: req.body.name,
+            email_reception: req.body.email
         })
     }else{
         console.log(req.body);
@@ -110,7 +114,9 @@ app.post('/reception', (req, res)=>{
                 console.log("already registerd");
                 console.log(reception);
                 res.render('index',{
-                    warning_reception: "You're already registered for reception!"
+                    warning_reception: "You're already registered for reception!",
+                    name_reception: req.body.name,
+                    email_reception: req.body.email                    
                 })
             }else{
                 console.log("first time login");
@@ -130,7 +136,7 @@ app.post('/reception', (req, res)=>{
     }         
 });
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.listen(port, () =>{
     console.log(`Server started ${port}`)

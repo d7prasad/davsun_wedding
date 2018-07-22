@@ -14,17 +14,17 @@ $('#warning-wed-message, #success-wed-message, #warning-reception-message, #succ
 $('#wedding-input, #reception-input').hide();
 
 $('#wedding-Details').on('click', function() {
-  $('#warning-wed-message, #success-wed-message').hide();
+  $('#warning-wed-message, #success-wed-message, #warning-wed-node').hide();
   $('#wedding-input').toggle();
 });
 
 $('#wedding-vote-cancel').on('click', function(){
-  $('#warning-wed-message, #success-wed-message').hide();
+  $('#warning-wed-message, #success-wed-message, #warning-wed-node').hide();
   $('#wedding-input').hide();
 })
 
 $("#wedding-vote-submit").on('click', function(){
-  $('#warning-wed-message, #success-wed-message').hide();
+  $('#warning-wed-message, #success-wed-message, #warning-wed-node').hide();
   var rad = $("input[name=wedding_vote]:checked").val();
   if(rad!=undefined){
     // $('#success-wed-message').fadeIn('slow');
@@ -33,7 +33,7 @@ $("#wedding-vote-submit").on('click', function(){
     $("#wedding-form").submit();
   }else{
     $('#warning-wed-message').show();
-    $('#warning-wed-node').find('p').text('Kindly select one option from above!')
+    // $('#warning-wed-node').find('p').text('Kindly select one option from above!')
   }
 });
 
@@ -53,17 +53,17 @@ if($('#warning-wed-node').length > 0){
 
 
 $('#reception-Details').on('click', function() {
-  $('#warning-reception-message, #success-reception-message').hide();
+  $('#warning-reception-message, #success-reception-message, #warning-reception-node').hide();
   $('#reception-input').toggle();
 });
 
 $('#reception-vote-cancel').on('click', function(){
-  $('#warning-reception-message, #success-reception-message').hide();
+  $('#warning-reception-message, #success-reception-message, #warning-reception-node').hide();
   $('#reception-input').hide();
 })
 
 $("#reception-vote-submit").on('click', function(){
-  $('#warning-reception-message, #success-reception-message').hide();
+  $('#warning-reception-message, #success-reception-message, #warning-reception-node').hide();
   var rad_reception = $("input[name=reception_vote]:checked").val();
   if(rad_reception!=undefined){
     // $('#success-wed-message').fadeIn('slow');
@@ -72,7 +72,7 @@ $("#reception-vote-submit").on('click', function(){
     $("#reception-form").submit();
   }else{
     $('#warning-reception-message').show();
-    $('#warning-reception-node').find('p').text('Kindly select one option from above!')
+    // $('#warning-reception-node').find('p').text('Kindly select one option from above!')
   }
 });
 
