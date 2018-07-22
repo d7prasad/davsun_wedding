@@ -35,7 +35,7 @@ $("#wedding-vote-submit").on('click', function(){
     $("#wedding-form").submit();
   }else{
     $('#warning-wed-message').show();
-    $(window).scrollTop($('#wedding-text-inner').offset().top);
+    // $(window).scrollTop($('#wedding-text-inner').offset().top);
     // $('#warning-wed-node').find('p').text('Kindly select one option from above!')
   }
 });
@@ -80,7 +80,7 @@ $("#reception-vote-submit").on('click', function(){
     $("#reception-form").submit();
   }else{
     $('#warning-reception-message').show();
-    $(window).scrollTop($('#reception-text-inner').offset().top);
+    // $(window).scrollTop($('#reception-text-inner').offset().top);
     // $('#warning-reception-node').find('p').text('Kindly select one option from above!')
   }
 });
