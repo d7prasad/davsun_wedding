@@ -75,7 +75,7 @@ main{
 #wedding-text{
   display: flex;
   flex: 0 1 40vw;
-  height: 70vh;
+  height: 110vh;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -149,7 +149,7 @@ main{
 #reception-text{
   display: flex;
   flex: 0 1 40vw;
-  height: 65vh;
+  height: 110vh;
   justify-content: center;
   align-items: center;
   text-align: center;
