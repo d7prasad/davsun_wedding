@@ -31,11 +31,11 @@
               <div id="wedding-input">
                 <div id="wedding-name">
                   <label for="wedding-name-text">Enter Your Name: </label>
-                  <input type="text" id="wedding-name-text" name="name" placeholder="Name">
+                  <input type="text" id="wedding-name-text" name="name" placeholder="Name" value="{{name}}">
                 </div>
                 <div id="wedding-mail">
                   <label for="wedding-name-mail">Enter Your email: </label>
-                  <input type="text" id="wedding-name-mail" name="email" placeholder="abc@xyz">
+                  <input type="text" id="wedding-name-mail" name="email" placeholder="abc@xyz" value="{{email}}">
                 </div>
                 <div id="wedding-vote-option">
                   <label for="wedding-radio-yes">Yes </label>
@@ -59,7 +59,7 @@
             {{#if warning}}
             <div id="warning-wed-node"><p>{{warning}}</p></div>
             {{else}}
-            <div id="warning-wed-message"><p>Your input has some errors!</p></div>
+            <div id="warning-wed-message"><p>Kindly select one option from above!</p></div>
             {{/if}}
           </div>
         </div>
@@ -73,9 +73,43 @@
               <h1>Reception Details</h1>
               <h4>Neyveli</h4>
               <p>Date: 25th - Aug - 2018</p>
-              <a href="#images" class="btn" id="Reception-Details">
+              <a href="#images" class="btn" id="reception-Details">
                 Vote Here
               </a>
+              <form action="/reception" method="post" id="reception-form">              
+              <div id="reception-input">
+                <div id="reception-name">
+                  <label for="reception-name-text">Enter Your Name: </label>
+                  <input type="text" id="reception-name-text" name="name" placeholder="Name" value="{{name_reception}}">
+                </div>
+                <div id="reception-mail">
+                  <label for="reception-name-mail">Enter Your email: </label>
+                  <input type="text" id="reception-name-mail" name="email" placeholder="abc@xyz" value="{{email_reception}}">
+                </div>
+                <div id="reception-vote-option">
+                  <label for="reception-radio-yes">Yes </label>
+                  <input type="radio" name="reception_vote" id="reception-radio-yes" value="yes">
+                  <label for="reception-radio-no">No </label>
+                  <input type="radio" name="reception_vote" id="reception-radion-no" value="no">
+                  <label for="reception-radio-maybe">May-be </label>
+                  <input type="radio" name="reception_vote" id="reception-radio-maybe" value="maybe">
+                </div>
+                <div id="reception-vote-button">
+                  <a href="#images" class="btn" id="reception-vote-submit">
+                    Submit</a>
+                  <a href="#images" class="btn" id="reception-vote-cancel">
+                    Cancel</a>
+                </div>
+              </div>
+            </form>
+            {{#if msg_reception}}
+              <div id="success-reception-message"><p>Your entry saved successfully!</p></div>
+            {{/if}}
+            {{#if warning_reception}}
+            <div id="warning-reception-node"><p>{{warning_reception}}</p></div>
+            {{else}}
+            <div id="warning-reception-message"><p>Kindly select one option from above!</p></div>
+            {{/if}}
             </div>
           </div>
           <div id="reception-image"></div>

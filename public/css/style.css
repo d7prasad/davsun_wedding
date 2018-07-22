@@ -93,32 +93,32 @@ main{
   margin: 0;
 }
 
-#wedding-input{
+#wedding-input, #reception-input{
   margin-top: 1rem;
   display: inline-block;
 }
 
-#wedding-name{
+#wedding-name, #reception-name{
   padding: 1rem;
 }
 
-#wedding-input label{
+#wedding-input, #reception-input label{
   margin-right: 5px;
 }
 
-#wedding-vote-submit{
+#wedding-vote-submit, #reception-vote-submit{
   margin-right: 5px;
 }
 
-#wedding-vote-option{
+#wedding-vote-option, #reception-vote-option{
   margin-top: 20px;
 }
 
-#success-wed-message{
-  padding: 0.5rem 2rem;
-  border: 1px #ccc solid;
+#success-wed-message, #success-reception-message{
+  padding: 0.5rem;
+  border: 1.5px #ccc solid;
   display: inline-block;
-  margin: 2rem 0 0;
+  margin: 1rem 0 0;
   text-decoration: none;
   color: #333;
   background-color: lightgreen;
@@ -126,11 +126,11 @@ main{
   border-radius: 10px;
 }
 
-#warning-wed-message, #warning-wed-node{
-  padding: 0.5rem 2rem;
+#warning-wed-message, #warning-wed-node, #warning-reception-message, #warning-reception-node{
+  padding: 0.5rem;
   border: 1px #ccc solid;
   display: inline-block;
-  margin: 2rem 0 0;
+  margin: 1.5rem 0 0;
   text-decoration: none;
   color: #333;
   background-color: coral;
@@ -147,7 +147,7 @@ main{
 #reception-text{
   display: flex;
   flex: 0 1 40vw;
-  height: 50vh;
+  height: 65vh;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -255,11 +255,11 @@ footer h3{
   }
 
   #wedding-text{
-    height: 70vh;
+    height: 75vh;
   }
 
   #wedding-image{
-    height: 70vh;
+    height: 75vh;
   }
     
   #reception{
@@ -268,11 +268,11 @@ footer h3{
   }
 
   #reception-text{
-    height: 70vh;
+    height: 75vh;
   }
 
   #reception-image{
-    height: 70vh;
+    height: 75vh;
   } 
 }
 
@@ -282,6 +282,9 @@ footer h3{
     padding: 1rem 3rem;
   }
   #wedding-vote-button .btn{
+    padding: 0.5rem 2rem;
+  }
+  #reception-vote-button .btn{
     padding: 0.5rem 2rem;
   }
 }
