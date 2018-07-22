@@ -54,11 +54,12 @@ if($('#warning-wed-node').length > 0){
   $('#warning-wed-node').show();
 }
 
-// $('#wedding-text-inner').on('click', function(e){
-//   $(window).scrollTop($('#wedding-text-inner').offset().top);
-//   $('#wedding-text-inner').focus();
-//   alert('alert');
-// })
+$('#wedding-text-inner').on('click', function(e){
+  e.preventDefault(); 
+  $(window).scrollTop($('#wedding-text-inner').offset().top);
+  $('#wedding-name-text').focus();
+  alert('alert');
+})
 
 // Reception Flow
 
