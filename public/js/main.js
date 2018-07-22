@@ -56,6 +56,7 @@ if($('#warning-wed-node').length > 0){
 
 $('#wedding-text-inner').on('click', function(e){
   $(window).scrollTop($('#wedding-text-inner').offset().top);
+  $('#wedding-text-inner').focus();
 })
 
 // Reception Flow
@@ -105,6 +106,7 @@ if($('#warning-reception-node').length > 0){
 
 $('#reception-text-inner').on('click', function(e){
   $(window).scrollTop($('#reception-text-inner').offset().top);
+  $('#reception-text-inner').focus();
 })
 
 
