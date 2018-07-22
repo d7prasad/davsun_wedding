@@ -54,10 +54,11 @@ if($('#warning-wed-node').length > 0){
   $('#warning-wed-node').show();
 }
 
-$('#wedding-text-inner').on('click', function(e){
-  $(window).scrollTop($('#wedding-text-inner').offset().top);
-  $('#wedding-text-inner').focus();
-})
+// $('#wedding-text-inner').on('click', function(e){
+//   $(window).scrollTop($('#wedding-text-inner').offset().top);
+//   $('#wedding-text-inner').focus();
+//   alert('alert');
+// })
 
 // Reception Flow
 
@@ -104,9 +105,9 @@ if($('#warning-reception-node').length > 0){
   $('#reception-Details').hide();
 }
 
-$('#reception-text-inner').on('click', function(e){
-  $(window).scrollTop($('#reception-text-inner').offset().top);
-  $('#reception-text-inner').focus();
-})
+// $('#reception-text-inner').on('click', function(e){
+//   $(window).scrollTop($('#reception-text-inner').offset().top);
+//   $('#reception-text-inner').focus();
+// })
 
 
