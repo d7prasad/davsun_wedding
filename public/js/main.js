@@ -41,13 +41,13 @@ $("#wedding-vote-submit").on('click', function(){
 
 if($('#success-wed-message').length > 0){
   $('#wedding-input').hide();
-  $(window).scrollTop($('#wedding-text').offset().top);
+  $(window).scrollTop($('#success-wed-message').offset().top);
   $('#wedding-Details').show();
   $('#success-wed-message').show();
 }
 
 if($('#warning-wed-node').length > 0){
-  $(window).scrollTop($('#wedding-text').offset().top);
+  $(window).scrollTop($('#warning-wed-node').offset().top);
   $('#wedding-input').show();
   $('#wedding-Details').hide();
   $('#warning-wed-node').show();
@@ -85,13 +85,13 @@ $("#reception-vote-submit").on('click', function(){
 
 if($('#success-reception-message').length > 0){
   $('#reception-input').hide();
-  $(window).scrollTop($('#reception-text').offset().top);
+  $(window).scrollTop($('#success-reception-message').offset().top);
   $('#reception-Details').show();
   $('#success-reception-message').show();
 }
 
 if($('#warning-reception-node').length > 0){
-  $(window).scrollTop($('#reception-text').offset().top);
+  $(window).scrollTop($('#warning-reception-node').offset().top);
   $('#reception-input').show();
   $('#warning-reception-node').show();
   $('#reception-Details').hide();
