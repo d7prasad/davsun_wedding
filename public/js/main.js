@@ -54,12 +54,12 @@ if($('#warning-wed-node').length > 0){
   $('#warning-wed-node').show();
 }
 
-$('#wedding-text-inner').on('click', function(e){
-  e.preventDefault(); 
-  $(window).scrollTop($('#wedding-text-inner').offset().top);
-  $('#wedding-vote-option').focus();
-  // alert('alert');
-})
+// $('#wedding-text-inner').on('click', function(e){
+//   e.preventDefault(); 
+//   $(window).scrollTop($('#wedding-text-inner').offset().top);
+//   $('#wedding-vote-option').focus();
+//   // alert('alert');
+// })
 
 // Reception Flow
 
@@ -111,4 +111,14 @@ if($('#warning-reception-node').length > 0){
 //   $('#reception-text-inner').focus();
 // })
 
-
+// Saves the offset when the user clicks the input
+let initialOffset = $('body').scrollTop();
+$('input, textarea, select').focus(function(e) {
+    let offset = $(e.target).offset();
+    initialOffset = $('body').scrollTop();
+    $('body').scrollTop(offset.top-100);
+});
+$('input, textarea, select').focusout(function(e) {
+    // Reset to the initial offset
+    $('body').scrollTop(initialOffset);
+});
