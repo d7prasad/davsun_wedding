@@ -35,19 +35,20 @@ $("#wedding-vote-submit").on('click', function(){
     $("#wedding-form").submit();
   }else{
     $('#warning-wed-message').show();
+    $(window).scrollTop($('#wedding-text-inner').offset().top);
     // $('#warning-wed-node').find('p').text('Kindly select one option from above!')
   }
 });
 
 if($('#success-wed-message').length > 0){
   $('#wedding-input').hide();
-  $(window).scrollTop($('#success-wed-message').offset().top);
+  $(window).scrollTop($('#wedding-text-inner').offset().top);
   $('#wedding-Details').show();
   $('#success-wed-message').show();
 }
 
 if($('#warning-wed-node').length > 0){
-  $(window).scrollTop($('#warning-wed-node').offset().top);
+  $(window).scrollTop($('#wedding-text-inner').offset().top);
   $('#wedding-input').show();
   $('#wedding-Details').hide();
   $('#warning-wed-node').show();
@@ -79,19 +80,20 @@ $("#reception-vote-submit").on('click', function(){
     $("#reception-form").submit();
   }else{
     $('#warning-reception-message').show();
+    $(window).scrollTop($('#reception-text-inner').offset().top);
     // $('#warning-reception-node').find('p').text('Kindly select one option from above!')
   }
 });
 
 if($('#success-reception-message').length > 0){
   $('#reception-input').hide();
-  $(window).scrollTop($('#success-reception-message').offset().top);
+  $(window).scrollTop($('#reception-text-inner').offset().top);
   $('#reception-Details').show();
   $('#success-reception-message').show();
 }
 
 if($('#warning-reception-node').length > 0){
-  $(window).scrollTop($('#warning-reception-node').offset().top);
+  $(window).scrollTop($('#reception-text-inner').offset().top);
   $('#reception-input').show();
   $('#warning-reception-node').show();
   $('#reception-Details').hide();
