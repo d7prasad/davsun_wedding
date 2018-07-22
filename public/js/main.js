@@ -15,12 +15,14 @@ $('#wedding-input, #reception-input').hide();
 
 $('#wedding-Details').on('click', function() {
   $('#warning-wed-message, #success-wed-message, #warning-wed-node').hide();
-  $('#wedding-input').toggle();
+  $('#wedding-input').show();
+  $('#wedding-Details').hide()
 });
 
 $('#wedding-vote-cancel').on('click', function(){
   $('#warning-wed-message, #success-wed-message, #warning-wed-node').hide();
   $('#wedding-input').hide();
+  $('#wedding-Details').show()
 })
 
 $("#wedding-vote-submit").on('click', function(){
@@ -40,12 +42,14 @@ $("#wedding-vote-submit").on('click', function(){
 if($('#success-wed-message').length > 0){
   $('#wedding-input').hide();
   $(window).scrollTop($('#wedding-text').offset().top);
+  $('#wedding-Details').show();
   $('#success-wed-message').show();
 }
 
 if($('#warning-wed-node').length > 0){
   $(window).scrollTop($('#wedding-text').offset().top);
   $('#wedding-input').show();
+  $('#wedding-Details').hide();
   $('#warning-wed-node').show();
 }
 
@@ -54,12 +58,15 @@ if($('#warning-wed-node').length > 0){
 
 $('#reception-Details').on('click', function() {
   $('#warning-reception-message, #success-reception-message, #warning-reception-node').hide();
-  $('#reception-input').toggle();
+  $('#reception-input').show();
+  $('#reception-Details').hide();
+  
 });
 
 $('#reception-vote-cancel').on('click', function(){
   $('#warning-reception-message, #success-reception-message, #warning-reception-node').hide();
   $('#reception-input').hide();
+  $('#reception-Details').show();
 })
 
 $("#reception-vote-submit").on('click', function(){
@@ -79,6 +86,7 @@ $("#reception-vote-submit").on('click', function(){
 if($('#success-reception-message').length > 0){
   $('#reception-input').hide();
   $(window).scrollTop($('#reception-text').offset().top);
+  $('#reception-Details').show();
   $('#success-reception-message').show();
 }
 
@@ -86,6 +94,7 @@ if($('#warning-reception-node').length > 0){
   $(window).scrollTop($('#reception-text').offset().top);
   $('#reception-input').show();
   $('#warning-reception-node').show();
+  $('#reception-Details').hide();
 }
 
 
