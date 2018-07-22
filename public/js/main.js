@@ -58,7 +58,7 @@ $('#wedding-text-inner').on('click', function(e){
   e.preventDefault(); 
   $(window).scrollTop($('#wedding-text-inner').offset().top);
   $('#wedding-name-text').focus();
-  alert('alert');
+  // alert('alert');
 })
 
 // Reception Flow
