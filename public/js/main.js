@@ -14,19 +14,19 @@ $('#warning-wed-message, #success-wed-message, #warning-reception-message, #succ
 $('#wedding-input, #reception-input').hide();
 
 $('#wedding-Details').on('click', function() {
-  $('#warning-wed-message, #success-wed-message, #warning-wed-node').hide();
+  $('#warning-reception-message, #success-reception-message, #warning-reception-node, #warning-wed-message, #success-wed-message, #warning-wed-node').hide();
   $('#wedding-input').show();
   $('#wedding-Details').hide()
 });
 
 $('#wedding-vote-cancel').on('click', function(){
-  $('#warning-wed-message, #success-wed-message, #warning-wed-node').hide();
+  $('#warning-reception-message, #success-reception-message, #warning-reception-node, #warning-wed-message, #success-wed-message, #warning-wed-node').hide();
   $('#wedding-input').hide();
   $('#wedding-Details').show()
 })
 
 $("#wedding-vote-submit").on('click', function(){
-  $('#warning-wed-message, #success-wed-message, #warning-wed-node').hide();
+  $('#warning-wed-message, #success-wed-message, #warning-wed-node, #warning-reception-message, #success-reception-message, #warning-reception-node').hide();
   var rad = $("input[name=wedding_vote]:checked").val();
   if(rad!=undefined){
     // $('#success-wed-message').fadeIn('slow');
@@ -57,20 +57,20 @@ if($('#warning-wed-node').length > 0){
 
 
 $('#reception-Details').on('click', function() {
-  $('#warning-reception-message, #success-reception-message, #warning-reception-node').hide();
+  $('#warning-reception-message, #success-reception-message, #warning-reception-node, #warning-wed-message, #success-wed-message, #warning-wed-node').hide();
   $('#reception-input').show();
   $('#reception-Details').hide();
   
 });
 
 $('#reception-vote-cancel').on('click', function(){
-  $('#warning-reception-message, #success-reception-message, #warning-reception-node').hide();
+  $('#warning-reception-message, #success-reception-message, #warning-reception-node, #warning-wed-message, #success-wed-message, #warning-wed-node').hide();
   $('#reception-input').hide();
   $('#reception-Details').show();
 })
 
 $("#reception-vote-submit").on('click', function(){
-  $('#warning-reception-message, #success-reception-message, #warning-reception-node').hide();
+  $('#warning-reception-message, #success-reception-message, #warning-reception-node, #warning-wed-message, #success-wed-message, #warning-wed-node').hide();
   var rad_reception = $("input[name=reception_vote]:checked").val();
   if(rad_reception!=undefined){
     // $('#success-wed-message').fadeIn('slow');
