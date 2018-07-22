@@ -57,7 +57,7 @@ if($('#warning-wed-node').length > 0){
 $('#wedding-text-inner').on('click', function(e){
   e.preventDefault(); 
   $(window).scrollTop($('#wedding-text-inner').offset().top);
-  $('#wedding-name-text').focus();
+  $('#wedding-vote-option').focus();
   // alert('alert');
 })
 
