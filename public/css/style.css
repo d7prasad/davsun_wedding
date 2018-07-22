@@ -75,7 +75,7 @@ main{
 #wedding-text{
   display: flex;
   flex: 0 1 40vw;
-  height: 65vh;
+  height: 70vh;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -115,10 +115,11 @@ main{
 }
 
 #success-wed-message, #success-reception-message{
-  padding: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   border: 1.5px #ccc solid;
   display: inline-block;
-  margin: 1rem 0 0;
+  margin-top: 1rem;
   text-decoration: none;
   color: #333;
   background-color: lightgreen;
@@ -127,10 +128,11 @@ main{
 }
 
 #warning-wed-message, #warning-wed-node, #warning-reception-message, #warning-reception-node{
-  padding: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   border: 1px #ccc solid;
   display: inline-block;
-  margin: 1.5rem 0 0;
+  margin-top: 1rem;
   text-decoration: none;
   color: #333;
   background-color: coral;
