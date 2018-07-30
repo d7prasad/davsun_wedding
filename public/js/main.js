@@ -112,13 +112,20 @@ if($('#warning-reception-node').length > 0){
 // })
 
 // Saves the offset when the user clicks the input
-let initialOffset = $('body').scrollTop();
-$('input, textarea, select').focus(function(e) {
-    let offset = $(e.target).offset();
-    initialOffset = $('body').scrollTop();
-    $('body').scrollTop(offset.top-100);
-});
-$('input, textarea, select').focusout(function(e) {
-    // Reset to the initial offset
-    $('body').scrollTop(initialOffset);
+// let initialOffset = $('body').scrollTop();
+// $('input, textarea, select').focus(function(e) {
+//     let offset = $(e.target).offset();
+//     initialOffset = $('body').scrollTop();
+//     $('body').scrollTop(offset.top-100);
+//     alert('Focus in')
+// });
+// $('input, textarea, select').focusout(function(e) {
+//     // Reset to the initial offset
+//     $('body').scrollTop(initialOffset);
+//     alert('Focus out');
+// });
+
+$('#wedding-name-text').focus(function(){
+  // alert('focused')
+  $('#wedding-name-text').addClass("absolute");
 });
