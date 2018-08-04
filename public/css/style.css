@@ -51,7 +51,7 @@ main{
 #landing-text{
   display: flex;
   flex: 0 1 40vw;
-  height: 50vh;
+  height: 30rem;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -64,7 +64,7 @@ main{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 50vh;
+  height: 30rem;
   flex: 0 1 60vw;
   margin: 0;
 }
@@ -84,7 +84,7 @@ main{
 #wedding-text{
   display: flex;
   flex: 0 1 40vw;
-  height: 110vh;
+  height: 40rem;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -97,7 +97,7 @@ main{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 110vh;
+  height: 40rem;
   flex: 0 1 60vw;
   margin: 0;
 }
@@ -158,7 +158,7 @@ main{
 #reception-text{
   display: flex;
   flex: 0 1 40vw;
-  height: 110vh;
+  height: 40rem;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -171,14 +171,13 @@ main{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 40rem;
   flex: 0 1 55vw;
   margin: 0;
 }
 
 #reception-text-inner{
-  display: block;
-}
+  display: block;}
 
 #reception-header{
   display: block;
@@ -262,11 +261,11 @@ footer h3{
   }
 
   #landing-text{
-    height: 70vh;
+    height: 30rem;
   }
 
   #landing-image{
-    height: 70vh;
+    height: 30rem;
   }
 
   #wedding{
@@ -275,11 +274,11 @@ footer h3{
   }
 
   #wedding-text{
-    height: 75vh;
+    height: 35rem;
   }
 
   #wedding-image{
-    height: 75vh;
+    height: 35rem;
   }
     
   #reception{
@@ -288,11 +287,11 @@ footer h3{
   }
 
   #reception-text{
-    height: 75vh;
+    height: 35rem;
   }
 
   #reception-image{
-    height: 75vh;
+    height: 35rem;
   } 
 }
 
