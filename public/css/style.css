@@ -6,6 +6,7 @@ body{
   margin: 0;
   background: #eee;
   height: auto;
+  display: block;
 }
 
 h1{
@@ -44,6 +45,7 @@ main{
 
 #landing{
   background: #fff;
+  display: block;
 }
 
 #landing-text{
@@ -67,6 +69,13 @@ main{
   margin: 0;
 }
 
+#landing-text-inner{
+  display: block;
+}
+
+#header{
+  display: block;
+}
 
 #wedding{
   background: #fff;
@@ -112,6 +121,10 @@ main{
 
 #wedding-vote-option, #reception-vote-option{
   margin-top: 20px;
+}
+
+#wedding-text-inner{
+  display: block;
 }
 
 #success-wed-message, #success-reception-message{
@@ -163,6 +176,13 @@ main{
   margin: 0;
 }
 
+#reception-text-inner{
+  display: block;
+}
+
+#reception-header{
+  display: block;
+}
 .btn {
   padding: 0.5rem 2rem;
   border: 1px #ccc solid;
